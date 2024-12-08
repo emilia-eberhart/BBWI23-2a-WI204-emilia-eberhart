@@ -1,0 +1,28 @@
+.row {
+    display: flex; /* Flexbox aktivieren */
+    justify-content: center; /* Horizontal zentrieren */
+    align-items: center; /* Vertikal zentrieren */
+    margin: 0; /* Außenabstand der Reihe entfernen */
+    height: 100vh; /* Höhe auf 100% der Bildschirmhöhe setzen */
+    width: 100%; /* Breite auf 100% der Bildschirmbreite setzen */
+}
+
+.card {
+    width: 80%; /* Breite der Karte anpassen */
+    max-width: 600px; /* Maximale Breite der Karte */
+    height: 80%; /* Höhe der Karte relativ zur Bildschirmhöhe */
+    max-height: 800px; /* Maximale Höhe der Karte */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertikal zentrieren des Inhalts */
+    align-items: center; /* Horizontal zentrieren des Inhalts */
+    padding: 20px; /* Innenabstand für besseren Abstand */
+}
+
+.card-title {
+    text-align: center; /* Titel zentrieren */
+}
+
+.card-content {
+    text-align: center; /* Inhalt zentrieren */
+}

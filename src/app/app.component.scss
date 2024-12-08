@@ -1,0 +1,50 @@
+.nav-wrapper {
+  height: 60px;
+}
+
+.brand-logo img {   
+  width: auto; 
+  height: 65px;
+}
+
+.row {
+  display: flex; /* Flexbox aktivieren */
+  justify-content: center; /* Horizontal zentrieren */
+  align-items: center; /* Vertikal zentrieren, falls nötig */
+  min-height: 100vh; /* Option: Bildschirmhöhe nutzen */
+  margin: 0; /* Außenabstand der Reihe entfernen */
+}
+
+.card {
+  max-width: 400px; /* Optionale Begrenzung der Kartenbreite */
+  width: 100%; /* Karte soll sich anpassen */
+  background-color: antiquewhite;
+}
+
+.card-image {
+  display: flex; /* Flexbox aktivieren */
+  justify-content: center; /* Zentriert das Bild horizontal */
+  align-items: center; /* Zentriert das Bild vertikal */
+  padding: 20px; /* Optional: Abstand innerhalb des Containers */
+}
+
+.card-image img {
+  width: 200px; /* Breite des Bildes */
+  height: auto; /* Proportionen des Bildes bewahren */
+}
+
+.card-title {
+  color:rgb(255, 252, 249) !important;       /* Setzt die Textfarbe auf schwarz */
+  font-weight: bold;
+  text-align: center;  /* Zentriert den Text horizontal */
+  width: 100%;         /* Stellt sicher, dass der Container die volle Breite einnimmt */
+  display: block;      /* Sicherstellen, dass der Textblock als Blockelement dargestellt wird */
+}
+
+.card-content p {
+  margin-bottom: 30px;
+}
+
+.card-action a {
+  margin-bottom: 0;   
+}
