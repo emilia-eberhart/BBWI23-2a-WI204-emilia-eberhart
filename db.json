@@ -1,0 +1,17 @@
+{
+  "about-me": [
+    {
+      "id": "detail",
+      "name": "Emilia xxxx",
+      "image": "/assets/astronaut.jpg"
+    }
+  ],
+  "cvs": [
+    {
+      "id": "ed73",
+      "employer": "est",
+      "start": "2024-12-29",
+      "end": "2024-12-27"
+    }
+  ]
+}

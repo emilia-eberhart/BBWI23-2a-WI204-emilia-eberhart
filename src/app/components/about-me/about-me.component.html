@@ -5,7 +5,10 @@
           <h4 class="card-title">Über mich?</h4>
         </div>
         <div class="card-content">
-          <p class="name">Emilia Eberhart</p>
+          <form #aboutMeForm="ngForm" (ngSubmit)="submit(aboutMeForm)">
+            <input type="text" name="name" [ngModel]="aboutMe?.name" required>
+            <button class="btn" type="submit" [disabled]="aboutMeForm.invalid">save</button>
+            </form>
           <p>20.05.1999 / Alter: 25 Jahre</p>
           <p>Musterstrasse 1</p>
           <p>3600 Thun</p>

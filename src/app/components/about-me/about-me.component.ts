@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AboutMeService } from '../../services/about-me.service';
 import { AboutMe } from '../../models/about-me';
+import { NgForm } from '@angular/forms';
 @Component({
 selector: 'app-about-me',
 templateUrl: './about-me.component.html',
@@ -13,6 +14,15 @@ private aboutMeService: AboutMeService
 ) {
 }
 ngOnInit(): void {
-this.aboutMe = this.aboutMeService.getAboutMe()
-}
-}
+    this.aboutMeService.getAboutMe().subscribe(aboutMe => this.aboutMe = aboutMe)
+    }
+    submit(form: NgForm): void {
+    if (form.valid) {
+    this.aboutMeService.updateAboutMe(form.value.name).subscribe(
+    aboutMe => this.aboutMe!.name = aboutMe.name
+    )
+    } else {
+    alert('The name is not valid')
+    }
+    }
+    }
