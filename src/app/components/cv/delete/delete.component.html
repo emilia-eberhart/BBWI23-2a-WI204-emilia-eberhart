@@ -1,1 +1,6 @@
-<p>Die Informationen wurden gelöscht.</p>
+<p>Möchtest du die Daten wirklich löschen?</p>
+{{cv?.employer}} {{cv?.start}}{{cv?.end}}
+
+<br>
+<button class="btn red" (click)="delete()">Ja</button>
+<button class="btn grey" (click)="back()">Nein</button>

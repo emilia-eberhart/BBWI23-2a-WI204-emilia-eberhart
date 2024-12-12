@@ -10,6 +10,11 @@ constructor(private http: HttpClient) { }
 getCVs(): Observable<CV[]> {
     return this.http.get<CV[]>('/api/cvs/');
     }
+
+getCVById(id: string): Observable<CV> {
+    return this.http.get<CV>('/api/cvs/' + id);
+}
+
 createCV(cv: CV): Observable<CV> {
     return this.http.post<CV>(`/api/cvs/`, cv);
     }
