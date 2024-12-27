@@ -10,6 +10,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CreateUpdateComponent } from './components/cv/create-update/create-update.component';
 import { DeleteComponent } from './components/cv/delete/delete.component';
+import { LoginAppComponent } from './login-app/login-app.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { LogoutComponent } from './logout/logout.component';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +21,10 @@ import { DeleteComponent } from './components/cv/delete/delete.component';
     AboutMeComponent,
     CVComponent,
     CreateUpdateComponent,
-    DeleteComponent
+    DeleteComponent,
+    LoginAppComponent,
+    RegistrationComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
